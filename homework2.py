@@ -11,15 +11,12 @@ print(fact(0))
 
 def simple(q):
     if q <= 1:
-        return "Составное"
+        return "Ни простое, ни составное"
     for i in range(2, q):
         if q % i == 0:
             return "Составное"
     return "Простое"
 
-
-
-print(simple(5))
 
 def elements(input_list):
     return list(set(input_list))
